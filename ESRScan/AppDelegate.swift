@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if shouldHideIntroView() {
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("ScansViewController") as UIViewController
+            let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("ScansViewVideoController") as UIViewController
             let navigationController = MainNavigationController(rootViewController: viewController)
             self.window?.rootViewController = navigationController
         }
