@@ -19,10 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
 
         if shouldHideIntroView() {
-            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("ScansViewVideoController") as UIViewController
-            let navigationController = MainNavigationController(rootViewController: viewController)
-            self.window?.rootViewController = navigationController
+            self.window?.rootViewController?.performSegueWithIdentifier("scansView", sender: self)
         }
 
         // Configure tracker from GoogleService-Info.plist.

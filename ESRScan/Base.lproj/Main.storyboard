@@ -238,6 +238,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="gJQ-xh-nZO" kind="relationship" relationship="rootViewController" id="Xgj-GQ-slW"/>
+                        <segue destination="uXm-8c-i27" kind="show" identifier="scansView" animates="NO" id="5Vu-9b-fMx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ost-4e-WZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -583,4 +584,7 @@
         <image name="Intro2" width="370" height="117"/>
         <image name="Intro3" width="350" height="228"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Vu-9b-fMx"/>
+    </inferredMetricsTieBreakers>
 </document>
